@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition
+        app:constraintSetEnd="@id/uber_main_end"
+        app:constraintSetStart="@id/uber_main_start" />
+    <ConstraintSet android:id="@+id/uber_main_start">
+        <Constraint
+            android:id="@+id/searching_layout_id"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/list_item_spacing"
+            android:layout_marginEnd="@dimen/list_item_spacing"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:translationY="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+        <Constraint
+            android:id="@id/search_results_layout_id"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/list_item_spacing"
+            android:layout_marginEnd="@dimen/list_item_spacing"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:translationY="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searching_layout_id" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/uber_main_end">
+        <Constraint
+            android:id="@id/searching_layout_id"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/list_item_spacing"
+            android:layout_marginEnd="@dimen/list_item_spacing"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:translationY="-40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+        <Constraint
+            android:id="@id/search_results_layout_id"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/list_item_spacing"
+            android:layout_marginEnd="@dimen/list_item_spacing"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:translationY="-30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searching_layout_id" />
+    </ConstraintSet>
+
+</MotionScene>
